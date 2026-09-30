@@ -1,183 +1,198 @@
+const socialLinks = [
+  {
+    name: "Facebook",
+    handle: "@carltoonsofficial",
+    url: "https://www.facebook.com/carltoonsofficial",
+  },
+  {
+    name: "Instagram",
+    handle: "@carltoonsofficial",
+    url: "https://www.instagram.com/carltoonsofficial",
+  },
+  {
+    name: "YouTube",
+    handle: "@carltoonsofficial",
+    url: "https://www.youtube.com/@carltoonsofficial",
+  },
+  {
+    name: "TikTok",
+    handle: "@carltoonsofficial",
+    url: "https://www.tiktok.com/@carltoonsofficial",
+  },
+];
+
 export default function Home() {
   return (
-    <main className="min-h-screen bg-neutral-950 text-white">
-      {/* Navigation */}
-      <header className="border-b border-white/10 bg-neutral-950/90 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-          <div>
-            <h1 className="text-2xl font-black tracking-tight">
-              CARL<span className="text-orange-500">TOONS</span>
-            </h1>
-            <p className="text-xs text-neutral-500">
-              Official Creator Website
-            </p>
-          </div>
+    <main className="min-h-screen bg-black text-white">
+      {/* Header */}
+      <header className="border-b border-white/10">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
+          <a
+            href="/"
+            className="text-2xl font-black tracking-tight hover:text-orange-400"
+          >
+            CARLTOONS
+          </a>
 
-          <nav className="hidden gap-8 text-sm font-medium md:flex">
-            <a href="#" className="transition hover:text-orange-400">
-              Home
-            </a>
-            <a href="#videos" className="transition hover:text-orange-400">
-              Videos
-            </a>
-            <a href="#art" className="transition hover:text-orange-400">
-              Art
-            </a>
-            <a href="#social" className="transition hover:text-orange-400">
+          <nav className="hidden gap-6 text-sm md:flex">
+            <a href="#socials" className="hover:text-orange-400">
               Social Media
             </a>
-            <a href="#about" className="transition hover:text-orange-400">
+
+            <a href="#about" className="hover:text-orange-400">
               About
+            </a>
+
+            <a href="#contact" className="hover:text-orange-400">
+              Contact
             </a>
           </nav>
         </div>
       </header>
 
       {/* Hero */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(249,115,22,0.20),transparent_40%)]" />
+      <section className="mx-auto max-w-6xl px-6 py-24 text-center">
+        <p className="mb-4 text-sm font-bold uppercase tracking-[0.3em] text-orange-400">
+          Creator • Artist • Entertainment
+        </p>
 
-        <div className="relative mx-auto max-w-7xl px-6 py-28 md:py-40">
-          <div className="max-w-4xl">
-            <p className="mb-5 text-sm font-bold uppercase tracking-[0.3em] text-orange-400">
-              Welcome to Carltoons
-            </p>
+        <h1 className="text-5xl font-black tracking-tight md:text-7xl">
+          Welcome to Carltoons
+        </h1>
 
-            <h2 className="text-5xl font-black leading-tight tracking-tight md:text-7xl">
-              Creativity,
-              <br />
-              <span className="text-orange-500">comedy & imagination.</span>
-            </h2>
+        <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white/65">
+          Official Carltoons website featuring original artwork, funny
+          videos, stories, entertainment and social media.
+        </p>
 
-            <p className="mt-7 max-w-2xl text-lg leading-8 text-neutral-400">
-              The official home of Carltoons — bringing together original
-              artwork, videos, stories, characters, and all of my social
-              media in one place.
-            </p>
-
-            <div className="mt-10 flex flex-wrap gap-4">
-              <a
-                href="#videos"
-                className="rounded-full bg-orange-500 px-7 py-3 font-bold text-black transition hover:bg-orange-400"
-              >
-                Watch Videos
-              </a>
-
-              <a
-                href="#social"
-                className="rounded-full border border-white/20 px-7 py-3 font-bold transition hover:bg-white/10"
-              >
-                Find Me Online
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Featured Content */}
-      <section id="videos" className="mx-auto max-w-7xl px-6 py-20">
-        <div className="mb-10">
-          <p className="text-sm font-bold uppercase tracking-widest text-orange-400">
-            Featured
-          </p>
-          <h3 className="mt-2 text-3xl font-black md:text-4xl">
-            Latest Content
-          </h3>
-        </div>
-
-        <div className="grid gap-6 md:grid-cols-3">
-          <div className="group rounded-3xl border border-white/10 bg-white/[0.04] p-8 transition hover:-translate-y-1 hover:border-orange-500/40">
-            <div className="mb-6 flex h-40 items-center justify-center rounded-2xl bg-neutral-900 text-5xl">
-              🎬
-            </div>
-            <h4 className="text-xl font-bold">Videos</h4>
-            <p className="mt-2 text-neutral-500">
-              Watch the latest Carltoons videos and productions.
-            </p>
-          </div>
-
-          <div
-            id="art"
-            className="group rounded-3xl border border-white/10 bg-white/[0.04] p-8 transition hover:-translate-y-1 hover:border-orange-500/40"
+        <div className="mt-10 flex flex-wrap justify-center gap-4">
+          <a
+            href="#socials"
+            className="rounded-full bg-orange-500 px-7 py-3 font-bold text-black transition hover:scale-105 hover:bg-orange-400"
           >
-            <div className="mb-6 flex h-40 items-center justify-center rounded-2xl bg-neutral-900 text-5xl">
-              🎨
-            </div>
-            <h4 className="text-xl font-bold">Artwork</h4>
-            <p className="mt-2 text-neutral-500">
-              Explore original drawings, illustrations, and creative projects.
-            </p>
-          </div>
+            Follow Carltoons
+          </a>
 
-          <div className="group rounded-3xl border border-white/10 bg-white/[0.04] p-8 transition hover:-translate-y-1 hover:border-orange-500/40">
-            <div className="mb-6 flex h-40 items-center justify-center rounded-2xl bg-neutral-900 text-5xl">
-              ⭐
-            </div>
-            <h4 className="text-xl font-bold">Featured Projects</h4>
-            <p className="mt-2 text-neutral-500">
-              Discover stories, characters, experiments, and productions.
-            </p>
-          </div>
+          <a
+            href="#about"
+            className="rounded-full border border-white/20 px-7 py-3 font-bold transition hover:bg-white/10"
+          >
+            Explore
+          </a>
         </div>
       </section>
 
-      {/* Social Media */}
-      <section id="social" className="border-y border-white/10 bg-white/[0.02]">
-        <div className="mx-auto max-w-7xl px-6 py-20">
-          <p className="text-sm font-bold uppercase tracking-widest text-orange-400">
-            Connect
+      {/* SOCIAL MEDIA */}
+      <section
+        id="socials"
+        className="mx-auto max-w-6xl scroll-mt-20 px-6 py-20"
+      >
+        <div className="mb-10 text-center">
+          <p className="text-sm font-bold uppercase tracking-[0.25em] text-orange-400">
+            Connect With Carltoons
           </p>
 
-          <h3 className="mt-2 text-3xl font-black md:text-4xl">
-            Carltoons Everywhere
-          </h3>
+          <h2 className="mt-3 text-4xl font-black md:text-5xl">
+            Official Social Media
+          </h2>
 
-          <p className="mt-4 max-w-2xl text-neutral-400">
-            Follow Carltoons across social platforms and keep up with new
-            content.
+          <p className="mx-auto mt-4 max-w-2xl text-white/60">
+            Follow Carltoons across the official social-media platforms.
+            Click any card to go directly to the account.
           </p>
+        </div>
 
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {["Facebook", "YouTube", "Instagram", "TikTok"].map(
-              (platform) => (
-                <a
-                  key={platform}
-                  href="#"
-                  className="rounded-2xl border border-white/10 bg-neutral-950 p-6 font-bold transition hover:border-orange-500/50 hover:bg-orange-500/10"
-                >
-                  {platform}
-                  <span className="ml-2 text-orange-500">↗</span>
-                </a>
-              )
-            )}
-          </div>
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {socialLinks.map((social) => (
+            <a
+              key={social.name}
+              href={social.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Visit Carltoons on ${social.name}`}
+              className="group rounded-3xl border border-white/10 bg-white/[0.04] p-7 transition duration-300 hover:-translate-y-2 hover:border-orange-400/50 hover:bg-white/[0.08]"
+            >
+              <div className="flex items-center justify-between">
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-widest text-white/40">
+                    Official
+                  </p>
+
+                  <h3 className="mt-2 text-2xl font-black">
+                    {social.name}
+                  </h3>
+                </div>
+
+                <span className="text-3xl transition-transform duration-300 group-hover:translate-x-1">
+                  →
+                </span>
+              </div>
+
+              <p className="mt-5 text-sm text-white/50">
+                {social.handle}
+              </p>
+
+              <div className="mt-7 inline-flex rounded-full border border-orange-400/30 px-4 py-2 text-sm font-bold text-orange-400 transition group-hover:bg-orange-500 group-hover:text-black">
+                Visit {social.name} →
+              </div>
+            </a>
+          ))}
         </div>
       </section>
 
       {/* About */}
-      <section id="about" className="mx-auto max-w-7xl px-6 py-24">
-        <div className="max-w-3xl">
+      <section
+        id="about"
+        className="mx-auto max-w-6xl scroll-mt-20 px-6 py-20"
+      >
+        <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-8 md:p-12">
           <p className="text-sm font-bold uppercase tracking-widest text-orange-400">
-            About
+            About Carltoons
           </p>
 
-          <h3 className="mt-2 text-3xl font-black md:text-4xl">
-            One home for everything Carltoons.
-          </h3>
+          <h2 className="mt-3 text-4xl font-black">
+            One home for Carltoons.
+          </h2>
 
-          <p className="mt-6 text-lg leading-8 text-neutral-400">
-            Carltoons.com is being built as the central home for my creative
-            work, social media, videos, artwork, stories, and future projects.
+          <p className="mt-5 max-w-3xl leading-8 text-white/65">
+            Carltoons is a creator and entertainment brand bringing together
+            original artwork, funny content, videos, stories and social media
+            in one place.
           </p>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="border-t border-white/10">
-        <div className="mx-auto flex max-w-7xl flex-col gap-3 px-6 py-8 text-sm text-neutral-500 md:flex-row md:items-center md:justify-between">
-          <p>© 2026 Carltoons. All rights reserved.</p>
-          <p>Official Carltoons Website</p>
+      {/* Contact */}
+      <section
+        id="contact"
+        className="mx-auto max-w-6xl scroll-mt-20 px-6 py-20"
+      >
+        <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-8 md:p-12">
+          <p className="text-sm font-bold uppercase tracking-widest text-orange-400">
+            Contact
+          </p>
+
+          <h2 className="mt-3 text-4xl font-black">
+            Work with Carltoons
+          </h2>
+
+          <p className="mt-4 max-w-2xl leading-8 text-white/60">
+            For business, collaboration and creative inquiries, connect with
+            Carltoons through the official social-media accounts.
+          </p>
+
+          <a
+            href="#socials"
+            className="mt-7 inline-block rounded-full bg-orange-500 px-6 py-3 font-bold text-black transition hover:bg-orange-400"
+          >
+            View Official Accounts →
+          </a>
         </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="border-t border-white/10 px-6 py-8 text-center text-sm text-white/40">
+        © {new Date().getFullYear()} Carltoons. All rights reserved.
       </footer>
     </main>
   );
