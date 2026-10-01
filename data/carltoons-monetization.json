@@ -1,0 +1,12 @@
+{
+  "enabled": false,
+  "autoAds": false,
+  "publisherId": "",
+  "showHome": false,
+  "showContent": true,
+  "showVideos": true,
+  "showSearch": true,
+  "showSidebar": false,
+  "adsTxtAuthorized": true,
+  "updatedAt": "1970-01-01T00:00:00.000Z"
+}

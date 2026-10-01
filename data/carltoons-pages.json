@@ -1,0 +1,54 @@
+[
+  {
+    "id": "about-us",
+    "title": "About Us",
+    "slug": "about",
+    "content": "Welcome to Carltoons. This page is managed from Carltoons Studio. Replace this text with your official story, creator information, mission, and other details.",
+    "description": "Learn more about Carltoons.",
+    "seoTitle": "About Carltoons",
+    "seoDescription": "Learn more about Carltoons, its creator and its content.",
+    "published": true,
+    "order": 1,
+    "createdAt": "2026-10-01T00:00:00.000Z",
+    "updatedAt": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "contact-us",
+    "title": "Contact Us",
+    "slug": "contact",
+    "content": "For inquiries, collaborations, business opportunities, or other messages, use your official Carltoons contact details here. Edit this page from Carltoons Studio.",
+    "description": "Contact Carltoons.",
+    "seoTitle": "Contact Carltoons",
+    "seoDescription": "Contact Carltoons for inquiries, collaborations and business opportunities.",
+    "published": true,
+    "order": 2,
+    "createdAt": "2026-10-01T00:00:00.000Z",
+    "updatedAt": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "privacy-policy",
+    "title": "Privacy Policy",
+    "slug": "privacy-policy",
+    "content": "This is a starter Privacy Policy page. Before publishing commercially, replace this starter text with a policy that accurately describes the data Carltoons collects, cookies, analytics, advertising, contact forms, and third-party services used by your website.",
+    "description": "Carltoons privacy information.",
+    "seoTitle": "Privacy Policy | Carltoons",
+    "seoDescription": "Read the Carltoons privacy policy.",
+    "published": true,
+    "order": 3,
+    "createdAt": "2026-10-01T00:00:00.000Z",
+    "updatedAt": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "terms",
+    "title": "Terms",
+    "slug": "terms",
+    "content": "This is a starter Terms page. Replace it with terms that accurately describe your website, content, intellectual-property rules, user behavior, limitations, and contact information.",
+    "description": "Carltoons terms and conditions.",
+    "seoTitle": "Terms | Carltoons",
+    "seoDescription": "Read the Carltoons website terms.",
+    "published": true,
+    "order": 4,
+    "createdAt": "2026-10-01T00:00:00.000Z",
+    "updatedAt": "2026-10-01T00:00:00.000Z"
+  }
+]
