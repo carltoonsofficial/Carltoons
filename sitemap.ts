@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -9,4 +10,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
   ];
+=======
+import type { MetadataRoute } from "next";
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  return [
+    {
+      url: "https://carltoons-nine.vercel.app/",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 1,
+    },
+  ];
+>>>>>>> origin/main
 }

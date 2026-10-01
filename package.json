@@ -9,9 +9,13 @@
     "lint": "eslint"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@vercel/blob": "^2.8.0",
     "next": "16.3.7",
     "next-auth": "^4.24.15",
+=======
+    "next": "16.3.7",
+>>>>>>> origin/main
     "react": "19.2.8",
     "react-dom": "19.2.8"
   },
@@ -25,4 +29,8 @@
     "tailwindcss": "^4",
     "typescript": "^5"
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/main
